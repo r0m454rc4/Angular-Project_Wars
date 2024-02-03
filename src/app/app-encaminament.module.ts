@@ -1,14 +1,18 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
-import { M01_SalutacioComponent } from './m01-salutacio.component';
-import { M02_SumaComponent } from './m02-suma.component';
+import { IndexComponent } from "./index";
+import { M02_SumaComponent } from "./m02-suma.component";
+import { M03_IteradorComponent } from "./m03-iterador.component";
+import { ConctactoComponent } from "./contacto";
 
 const encaminaments: Routes = [
   // If the path is empty, redirects to tho component salutacio.
-  { path: '', redirectTo: '/salutacio', pathMatch: 'full' },
-  { path: 'salutacio', component: M01_SalutacioComponent },
-  { path: 'suma', component: M02_SumaComponent },
+  { path: "", redirectTo: "/index", pathMatch: "full" },
+  { path: "index", component: IndexComponent },
+  { path: "suma", component: M02_SumaComponent },
+  { path: "iterador", component: M03_IteradorComponent },
+  { path: "contacto", component: ConctactoComponent },
 ];
 
 @NgModule({
