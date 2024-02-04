@@ -1,3 +1,16 @@
-table {
+#barraNav{
+  margin: 50px;
+  border: solid 3px;
+  border-radius: 5px;
+}
+
+#tablaDatosGuerra {
+  margin-top: 50px;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+#pieDePagina {
+  margin: 50px;
+  border-radius: 5px;
 }
