@@ -15,16 +15,7 @@ import { MatTableDataSource, MatTableModule } from "@angular/material/table";
   imports: [MatTableModule, MatPaginatorModule, MatTableModule, MatSortModule],
 })
 export class IndexComponent implements AfterViewInit {
-  displayedColumns: string[] = [
-    "conflict_id",
-    "location",
-    "side_a",
-    "side_b",
-    "territory_name",
-    "intensity_level",
-    "start_date",
-    "ep_end_date",
-  ];
+  displayedColumns: string[] = ["position", "name", "weight", "symbol"];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   constructor(private _liveAnnouncer: LiveAnnouncer) {}
