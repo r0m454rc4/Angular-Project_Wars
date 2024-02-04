@@ -16,6 +16,7 @@ export class IndexComponent implements AfterViewInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
+  // https://stackoverflow.com/questions/75665773/property-paginator-and-sort-has-no-initializer
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   ngAfterViewInit() {
