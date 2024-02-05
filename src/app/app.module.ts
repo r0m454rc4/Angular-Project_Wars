@@ -14,6 +14,14 @@ import { ConctactoComponent } from "./contacto";
 import { M11_EncaminamentComponent } from "./m11-encaminament.component";
 import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
 
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatStepperModule} from '@angular/material/stepper';
+
 @NgModule({
   declarations: [
     M02_SumaComponent,
@@ -31,6 +39,15 @@ import { provideAnimationsAsync } from "@angular/platform-browser/animations/asy
     MatToolbarModule,
     MatPaginator,
     MatPaginatorModule,
+    BrowserModule,
+    CdkAccordionModule,
+
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   bootstrap: [M11_EncaminamentComponent],
   providers: [provideAnimationsAsync()], // This is the component I'm using.
