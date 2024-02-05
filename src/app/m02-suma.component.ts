@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'aplicacio',
+  selector: "aplicacio",
   template: `
     <div>
       <input type="text" placeholder="Entra nombre 1" #n1 required />
@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
     <h2 *ngIf="resultat < 0">El valor es negatiu</h2>
     <h3 *ngIf="resultat > 10">El valor es superior a 10</h3>
   `,
-  styles: ['h2 { color: #900 }', 'h3 {color:#0F0}'],
+  styles: ["h2 { color: #900 }", "h3 {color:#0F0}"],
 })
 export class M02_SumaComponent {
   resultat: number;

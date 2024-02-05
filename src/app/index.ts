@@ -3,18 +3,22 @@ import { AfterViewInit, Component, ViewChild } from "@angular/core";
 import { MatPaginator, MatPaginatorModule } from "@angular/material/paginator";
 import { MatSort, Sort, MatSortModule } from "@angular/material/sort";
 import { MatTableDataSource, MatTableModule } from "@angular/material/table";
+import { ContrincantsPipePipe } from "./contrincants-pipe.pipe";
 
 import DatosGuerra from "./UcdpPrioConflict_v23_1.json";
 
-/**
- * @title Table with pagination
- */
 @Component({
   selector: "aplicacio",
   styleUrls: ["./CSS/Style.css"],
   templateUrl: "./HTML/index.html",
   standalone: true,
-  imports: [MatTableModule, MatPaginatorModule, MatTableModule, MatSortModule],
+  imports: [
+    MatTableModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSortModule,
+    ContrincantsPipePipe,
+  ],
 })
 export class IndexComponent implements AfterViewInit {
   displayedColumns: string[] = [
@@ -40,12 +44,7 @@ export class IndexComponent implements AfterViewInit {
     this.dataSource.paginator = this.paginator;
   }
 
-  /** Announce the change in sort state for assistive technology. */
   announceSortChange(sortState: Sort) {
-    // This example uses English messages. If your application supports
-    // multiple language, you would internationalize these strings.
-    // Furthermore, you can customize the message to add additional
-    // details about the values being sorted.
     if (sortState.direction) {
       this._liveAnnouncer.announce(`Sorted ${sortState.direction}ending`);
     } else {
@@ -54,6 +53,7 @@ export class IndexComponent implements AfterViewInit {
   }
 }
 
+// USE PIPES WITH side_a, side_b (GOVERNMENT) & territory_name (-) IF EMPTY.
 export interface GuerraData {
   conflict_id: number;
   location: string;
@@ -86,7 +86,3 @@ export interface GuerraData {
 }
 
 const GUERRA_DATA: GuerraData[] = DatosGuerra;
-
-/**  Copyright 2024 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at https://angular.io/license */
