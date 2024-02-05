@@ -23,7 +23,9 @@ import { FormBuilder, FormGroup } from "@angular/forms"; // Import the necessary
       <router-outlet></router-outlet>
     </div>
 
+
     <div id="contenido">
+
     </div>
 
       <mat-toolbar class="example-footer"></mat-toolbar>

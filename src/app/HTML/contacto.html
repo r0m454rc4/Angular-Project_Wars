@@ -1,36 +1,38 @@
-<h1>Iterador</h1>
+  <div class="content-center">
+    <h1>Contacto</h1>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Ej. Juan">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Nombre</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="juang@gmail.com">
+        <mat-icon matSuffix>email</mat-icon>
+        <mat-hint>Mail</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Razón de contacto</mat-label>
+        <input matInput placeholder="Ej. Corrección">
+        <mat-icon matSuffix>question_answer</mat-icon>
+        <mat-hint>Razón</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Mensaje</mat-label>
+        <input matInput placeholder="Contenido del mensaje">
+        <mat-icon matSuffix>message</mat-icon>
+        <mat-hint>Mensaje</mat-hint>
+      </mat-form-field>
+    </p>
+    <button mat-mini-fab color="primary" aria-label="Example icon button with a plus one icon">
+      <mat-icon>send</mat-icon>
+    </button>
 
-<div class="form-group">
-  <input
-    type="text"
-    class="form-control"
-    placeholder="Entra el nom de l'alumne"
-    #alumne
-    required
-  />
-</div>
-
-<button class="btn btn-primary" (click)="afegirAlumne(alumne.value)">
-  Afegir
-</button>
-
-<button class="btn btn-primary" (click)="esborrarAlumne(alumne.value)">
-  Esborrar
-</button>
-
-<table class="table table-striped">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nom</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <!-- For alumne of llistaAlumnes -->
-    <tr *ngFor="let alumne of llistaAlumnes;index as i; first as isPrimer">
-      <th scope="col">{{i+1}}</th>
-      <td>{{alumne}}</td>
-    </tr>
-  </tbody>
-</table>
