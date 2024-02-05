@@ -24,7 +24,7 @@ import { FormBuilder, FormGroup } from "@angular/forms"; // Import the necessary
     </div>
 
     <div id="pieDePagina">
-      <mat-toolbar class="example-footer">Test</mat-toolbar>
+      <mat-toolbar>Test</mat-toolbar>
     </div>
   `,
 })
