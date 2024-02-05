@@ -23,9 +23,13 @@ import { FormBuilder, FormGroup } from "@angular/forms"; // Import the necessary
       <router-outlet></router-outlet>
     </div>
 
-    <div id="pieDePagina">
-      <mat-toolbar>Test</mat-toolbar>
+
+    <div id="contenido">
+
     </div>
+
+      <mat-toolbar class="example-footer"></mat-toolbar>
+
   `,
 })
 export class M11_EncaminamentComponent {

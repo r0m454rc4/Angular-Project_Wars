@@ -14,12 +14,19 @@ import { ContactoComponent } from "./contacto";
 import { M11_EncaminamentComponent } from "./m11-encaminament.component";
 import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
 
-//pag contacto
+
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatStepperModule} from '@angular/material/stepper';
+
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -39,11 +46,19 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatPaginator,
     MatPaginatorModule,
+
+    BrowserModule,
+    CdkAccordionModule,
+
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule,
     MatButtonModule,
+    MatIconModule,
      MatDividerModule
+
   ],
   bootstrap: [M11_EncaminamentComponent],
   providers: [provideAnimationsAsync()], // This is the component I'm using.

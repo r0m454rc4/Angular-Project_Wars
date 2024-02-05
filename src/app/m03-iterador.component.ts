@@ -1,20 +1,21 @@
 import { Component } from "@angular/core";
+import {FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: "aplicacio",
-  templateUrl: "./HTML/contacto.html",
-  styles: ["h1 { color: #900 }"],
+  templateUrl: "./HTML/preguntas.html",
+  styleUrls: ["./CSS/Style.css"],
 })
 export class M03_IteradorComponent {
-  llistaAlumnes: string[] = ["Joan", "Sergi", "Anna"];
+  items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+  expandedIndex = 0;
 
-  afegirAlumne(alumne: string): void {
-    this.llistaAlumnes.push(alumne);
-  }
+  firstFormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required],
+  });
+  secondFormGroup = this._formBuilder.group({
+    secondCtrl: ['', Validators.required],
+  });
 
-  esborrarAlumne(alumne: string) {
-    if (this.llistaAlumnes.indexOf(alumne) >= 0) {
-      this.llistaAlumnes.splice(this.llistaAlumnes.indexOf(alumne), 1); // I delete one name from the array.
-    }
-  }
+  constructor(private _formBuilder: FormBuilder) {}
 }
