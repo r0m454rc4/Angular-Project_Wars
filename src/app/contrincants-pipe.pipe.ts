@@ -1,6 +1,7 @@
 import { Pipe, PipeTransform } from "@angular/core";
 
-// https://www.youtube.com/watch?v=4xSj9jUEJFY
+// https://www.youtube.com/watch?v=4xSj9jUEJFY.
+// ng g pipe contrincantsPipe.
 @Pipe({
   name: "contrincantsPipe",
   standalone: true,

@@ -4,6 +4,7 @@ import { MatPaginator, MatPaginatorModule } from "@angular/material/paginator";
 import { MatSort, Sort, MatSortModule } from "@angular/material/sort";
 import { MatTableDataSource, MatTableModule } from "@angular/material/table";
 import { ContrincantsPipePipe } from "./contrincants-pipe.pipe";
+import { CamposVaciosPipe } from "./campos-vacios.pipe";
 
 import DatosGuerra from "./UcdpPrioConflict_v23_1.json";
 
@@ -18,6 +19,7 @@ import DatosGuerra from "./UcdpPrioConflict_v23_1.json";
     MatTableModule,
     MatSortModule,
     ContrincantsPipePipe,
+    CamposVaciosPipe,
   ],
 })
 export class IndexComponent implements AfterViewInit {
