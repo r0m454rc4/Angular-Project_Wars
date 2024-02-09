@@ -1,3 +1,16 @@
+#busqueda{
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-color: #3F51B5;
+  padding: 7px;
+}
+#lupa{
+  margin-left: 2px;
+  align-self: center;
+  color: #3F51B5;
+  vertical-align: middle;
+  
+}
 #barraNav {
   margin: 50px;
   border: solid rebeccapurple 3px;
