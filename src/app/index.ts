@@ -4,8 +4,8 @@ import { MatPaginator, MatPaginatorModule } from "@angular/material/paginator";
 import { MatSort, Sort, MatSortModule } from "@angular/material/sort";
 import { MatTableDataSource, MatTableModule } from "@angular/material/table";
 import { ContrincantsPipePipe } from "./contrincants-pipe.pipe";
+import {MatIconModule} from '@angular/material/icon';
 import { CamposVaciosPipe } from "./campos-vacios.pipe";
-
 import DatosGuerra from "./UcdpPrioConflict_v23_1.json";
 
 @Component({
@@ -19,6 +19,8 @@ import DatosGuerra from "./UcdpPrioConflict_v23_1.json";
     MatTableModule,
     MatSortModule,
     ContrincantsPipePipe,
+    MatIconModule
+
     CamposVaciosPipe,
   ],
 })
@@ -51,6 +53,14 @@ export class IndexComponent implements AfterViewInit {
       this._liveAnnouncer.announce(`Sorted ${sortState.direction}ending`);
     } else {
       this._liveAnnouncer.announce("Sorting cleared");
+    }
+  }
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
     }
   }
 }
