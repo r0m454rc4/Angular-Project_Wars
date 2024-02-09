@@ -1,7 +1,7 @@
-import { ContrincantsPipePipe } from './contrincants-pipe.pipe';
+import { ContrincantsPipePipe } from "./contrincants-pipe.pipe";
 
-describe('ContrincantsPipePipe', () => {
-  it('create an instance', () => {
+describe("ContrincantsPipePipe", () => {
+  it("create an instance", () => {
     const pipe = new ContrincantsPipePipe();
     expect(pipe).toBeTruthy();
   });
