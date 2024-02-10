@@ -20,7 +20,6 @@ import DatosGuerra from "./UcdpPrioConflict_v23_1.json";
     MatSortModule,
     ContrincantsPipePipe,
     MatIconModule,
-
     CamposVaciosPipe,
   ],
 })
