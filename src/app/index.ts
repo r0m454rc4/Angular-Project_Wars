@@ -4,7 +4,7 @@ import { MatPaginator, MatPaginatorModule } from "@angular/material/paginator";
 import { MatSort, Sort, MatSortModule } from "@angular/material/sort";
 import { MatTableDataSource, MatTableModule } from "@angular/material/table";
 import { ContrincantsPipePipe } from "./contrincants-pipe.pipe";
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from "@angular/material/icon";
 import { CamposVaciosPipe } from "./campos-vacios.pipe";
 import DatosGuerra from "./UcdpPrioConflict_v23_1.json";
 
@@ -19,7 +19,7 @@ import DatosGuerra from "./UcdpPrioConflict_v23_1.json";
     MatTableModule,
     MatSortModule,
     ContrincantsPipePipe,
-    MatIconModule
+    MatIconModule,
 
     CamposVaciosPipe,
   ],
@@ -56,8 +56,21 @@ export class IndexComponent implements AfterViewInit {
     }
   }
   applyFilter(event: Event) {
+    // https://stackoverflow.com/questions/49939979/filtering-specific-column-in-angular-material-table-with-filtering-in-angular
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    // Here I specify that I want to filter the information that I enter, but just from this tables. If not, I would filter the entered value but in all of the existing properties of the dataSource.
+    this.dataSource.filterPredicate = function (data): boolean {
+      return (
+        data.location.toLowerCase().includes(filterValue) ||
+        data.side_a.toString().includes(filterValue) ||
+        data.side_b.toString().includes(filterValue) ||
+        data.territory_name.toString().includes(filterValue) ||
+        data.start_date.toString().includes(filterValue) ||
+        data.ep_end_date.toString().includes(filterValue)
+      );
+    };
 
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();

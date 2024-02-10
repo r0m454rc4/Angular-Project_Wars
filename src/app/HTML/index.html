@@ -1,5 +1,5 @@
 <div id="tablaDatosGuerra">
-  <input type="text" placeholder="Search..." (keyup)="applyFilter($event)" >
+  <input type="text" placeholder="Busca..." (keyup)="applyFilter($event)" >
   <mat-icon matSuffix>search</mat-icon>
   
   <div class="mat-elevation-z8">
@@ -9,7 +9,7 @@
       matSort
       (matSortChange)="announceSortChange($event)"
     >
-      <!-- Position Column -->
+      <!-- Conflict Column -->
       <ng-container matColumnDef="conflict_id">
         <th
           mat-header-cell
@@ -24,7 +24,7 @@
         </td>
       </ng-container>
 
-      <!-- Name Column -->
+      <!-- Location Column -->
       <ng-container matColumnDef="location">
         <th
           mat-header-cell
@@ -39,7 +39,7 @@
         </td>
       </ng-container>
 
-      <!-- Weight Column -->
+      <!-- Side a Column -->
       <ng-container matColumnDef="side_a">
         <th
           mat-header-cell
@@ -54,7 +54,7 @@
         </td>
       </ng-container>
 
-      <!-- Symbol Column -->
+      <!-- Side b Column -->
       <ng-container matColumnDef="side_b">
         <th
           mat-header-cell
@@ -69,7 +69,7 @@
         </td>
       </ng-container>
 
-      <!-- Symbol Column -->
+      <!-- Territory Column -->
       <ng-container matColumnDef="territory_name">
         <th
           mat-header-cell
@@ -84,7 +84,7 @@
         </td>
       </ng-container>
 
-      <!-- Symbol Column -->
+      <!-- Intensity Column -->
       <ng-container matColumnDef="intensity_level">
         <th
           mat-header-cell
@@ -99,7 +99,7 @@
         </td>
       </ng-container>
 
-      <!-- Symbol Column -->
+      <!-- Start date Column -->
       <ng-container matColumnDef="start_date">
         <th
           mat-header-cell
@@ -114,7 +114,7 @@
         </td>
       </ng-container>
 
-      <!-- Symbol Column -->
+      <!-- End date Column -->
       <ng-container matColumnDef="ep_end_date">
         <th
           mat-header-cell
