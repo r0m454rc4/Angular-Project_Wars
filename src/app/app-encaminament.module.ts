@@ -11,7 +11,7 @@ const encaminaments: Routes = [
   { path: "", redirectTo: "/index", pathMatch: "full" },
   { path: "index", component: IndexComponent },
   { path: "nosotros", component: nosotrosComponent },
-  { path: "preguntasFreq", component: PreguntasFrequentesComponent },
+  { path: "preguntas", component: M03_IteradorComponent },
   { path: "contacto", component: ContactoComponent },
 ];
 
