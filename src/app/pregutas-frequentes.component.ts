@@ -6,7 +6,7 @@ import {FormBuilder, Validators} from '@angular/forms';
   templateUrl: "./HTML/preguntas.html",
   styleUrls: ["./CSS/Style.css"],
 })
-export class M03_IteradorComponent {
+export class PreguntasFrequentesComponent {
   items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
   expandedIndex = 0;
 

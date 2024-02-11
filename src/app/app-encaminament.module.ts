@@ -3,15 +3,15 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { IndexComponent } from "./index";
 import { nosotrosComponent } from "./nosotrosComponent";
-import { M03_IteradorComponent } from "./m03-iterador.component";
+import { PreguntasFrequentesComponent } from "./pregutas-frequentes.component";
 import { ContactoComponent } from "./contacto";
 
 const encaminaments: Routes = [
   // If the path is empty, redirects to index component.
   { path: "", redirectTo: "/index", pathMatch: "full" },
   { path: "index", component: IndexComponent },
-  { path: "suma", component: nosotrosComponent },
-  { path: "iterador", component: M03_IteradorComponent },
+  { path: "nosotros", component: nosotrosComponent },
+  { path: "preguntasFreq", component: PreguntasFrequentesComponent },
   { path: "contacto", component: ContactoComponent },
 ];
 
