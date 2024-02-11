@@ -1,15 +1,14 @@
-#busqueda{
+#busqueda {
   border-radius: 8px;
   margin-bottom: 10px;
-  border-color: #3F51B5;
+  border-color: #3f51b5;
   padding: 7px;
 }
-#lupa{
+#lupa {
   margin-left: 2px;
   align-self: center;
-  color: #3F51B5;
+  color: #3f51b5;
   vertical-align: middle;
-
 }
 #barraNav {
   margin: 50px;
@@ -83,6 +82,7 @@
 }
 
 .example-footer {
+
   position: fixed; /* Fija el footer en una posición relativa a la ventana del navegador */
   bottom: 0; /* Asegura que el footer se quede en la parte inferior de la pantalla */
   width: 100%; /* Se extiende a lo largo de toda la pantalla */
@@ -107,20 +107,19 @@ mat-card {
 mat-card img {
   max-width: 100%; 
   height: auto; 
+
 }
 .roma-header-image {
+
   background-image: url('../MEDIA/avatarRoma.png');
   background-size:contain;
+
 }
 .alex-header-image {
-  background-image: url('../MEDIA/alexAvatar.webp');
+  background-image: url("../MEDIA/alexAvatar.webp");
   background-size: cover;
 }
 .victor-header-image {
-  background-image: url('../MEDIA/avatarToro.png');
+  background-image: url("../MEDIA/avatarToro.png");
   background-size: cover;
 }
-
-
-
-/* Footer */

@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { IndexComponent } from "./index";
 import { nosotrosComponent } from "./nosotrosComponent";
-import { M03_IteradorComponent } from "./m03-iterador.component";
+import { PreguntasFrequentesComponent } from "./pregutas-frequentes.component";
 import { ContactoComponent } from "./contacto";
 
 const encaminaments: Routes = [

@@ -8,7 +8,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { AppEncaminamentModule } from "./app-encaminament.module";
 
 import { nosotrosComponent } from "./nosotrosComponent";
-import { M03_IteradorComponent } from "./m03-iterador.component";
+import { PreguntasFrequentesComponent } from "./pregutas-frequentes.component";
 import { ContactoComponent } from "./contacto";
 
 import { M11_EncaminamentComponent } from "./m11-encaminament.component";
@@ -31,7 +31,7 @@ import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     nosotrosComponent,
-    M03_IteradorComponent,
+    PreguntasFrequentesComponent,
     ContactoComponent,
     M11_EncaminamentComponent,
     ContactoComponent,
