@@ -10,9 +10,9 @@ import { FormBuilder, FormGroup } from "@angular/forms"; // Import the necessary
       <a mat-tab-link routerLink="/index" routerLinkActive="active-link"
         >Inicio</a
       >
-      <a mat-tab-link routerLink="/suma" routerLinkActive="active-link">Suma</a>
-      <a mat-tab-link routerLink="/iterador" routerLinkActive="active-link"
-        >Iterador</a
+      <a mat-tab-link routerLink="/nosotros" routerLinkActive="active-link">Nosotros</a>
+      <a mat-tab-link routerLink="/preguntas" routerLinkActive="active-link"
+        >Preguntas</a
       >
       <a mat-tab-link routerLink="/contacto" routerLinkActive="active-link"
         >Contacto</a
