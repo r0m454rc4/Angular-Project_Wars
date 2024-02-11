@@ -7,7 +7,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 
 import { AppEncaminamentModule } from "./app-encaminament.module";
 
-import { M02_SumaComponent } from "./m02-suma.component";
+import { nosotrosComponent } from "./nosotrosComponent";
 import { M03_IteradorComponent } from "./m03-iterador.component";
 import { ContactoComponent } from "./contacto";
 
@@ -25,15 +25,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
   declarations: [
-    M02_SumaComponent,
+    nosotrosComponent,
     M03_IteradorComponent,
     ContactoComponent,
     M11_EncaminamentComponent,
-    ContactoComponent
+    ContactoComponent,
+    nosotrosComponent
   ], // Here I must say the components I want to be able to use.
   imports: [
     AppEncaminamentModule,
@@ -56,7 +58,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCardModule,
 
   ],
   bootstrap: [M11_EncaminamentComponent],
