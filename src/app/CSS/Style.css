@@ -11,7 +11,7 @@
   vertical-align: middle;
 }
 #barraNav {
-  margin: 50px;
+  margin: 20px;
   border: solid rebeccapurple 3px;
   border-radius: 5px;
 }
@@ -28,6 +28,7 @@
   max-width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 45px;
 }
 
 .example-accordion-item {
@@ -100,7 +101,6 @@
 mat-card {
   max-width: 350px;
   display: inline-block;
-  margin: 100px; 
   align-self: center;
   margin-left: 8%;
 }
@@ -111,7 +111,7 @@ mat-card img {
 }
 .roma-header-image {
 
-  background-image: url('../MEDIA/avatarRoma.png');
+  background-image: url('../MEDIA/avatarRoma.webp');
   background-size:contain;
 
 }
@@ -122,4 +122,10 @@ mat-card img {
 .victor-header-image {
   background-image: url("../MEDIA/avatarToro.png");
   background-size: cover;
+}
+
+/* Contacto */
+
+.content-center {
+  margin-top: 75px;
 }
