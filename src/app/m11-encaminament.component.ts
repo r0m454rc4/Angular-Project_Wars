@@ -9,8 +9,10 @@ import { FormBuilder, FormGroup } from "@angular/forms"; // Import the necessary
     <nav id="barraNav" mat-tab-nav-bar ngClass="tabs">
       <a mat-tab-link routerLink="/index" routerLinkActive="active-link"
         >Inicio</a
-        >
-      <a mat-tab-link routerLink="/nosotros" routerLinkActive="active-link">Nosotros</a>
+      >
+      <a mat-tab-link routerLink="/nosotros" routerLinkActive="active-link"
+        >Nosotros</a
+      >
       <a mat-tab-link routerLink="/preguntas" routerLinkActive="active-link"
         >Preguntas</a
       >
@@ -23,13 +25,9 @@ import { FormBuilder, FormGroup } from "@angular/forms"; // Import the necessary
       <router-outlet></router-outlet>
     </div>
 
+    <div id="contenido"></div>
 
-    <div id="contenido">
-
-    </div>
-
-      <mat-toolbar class="example-footer"></mat-toolbar>
-
+    <mat-toolbar class="example-footer"></mat-toolbar>
   `,
 })
 export class M11_EncaminamentComponent {
